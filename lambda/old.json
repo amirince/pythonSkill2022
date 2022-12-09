@@ -1,0 +1,84 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my custom",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "QuestionOneIntent",
+                    "slots": [
+                        {
+                            "name": "questionOne",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "Question one {questionOne}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "Question One",
+                        "Question one I write checks with someone and pay bills without help",
+                        "I write checks  with someone pay bills  without help",
+                        "I do write checks with help {questionOne} and I can pay bills without help",
+                        "{questionOne} without help from anyone",
+                        "Question One {questionOne}",
+                        "I write checks and pay bills {questionOne}"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "QuestionOneIntent",
+                    "delegationStrategy": "SKILL_RESPONSE",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "questionOne",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.940245791744.490101932674"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.940245791744.490101932674",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Do you write checks or pay bills?"
+                    }
+                ]
+            }
+        ]
+    }
+}

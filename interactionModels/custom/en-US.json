@@ -1,0 +1,569 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "hello world",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "QuestionOneIntent",
+          "slots": [
+            {
+              "name": "questionOne",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "question one {questionOne}",
+                "{questionOne}"
+              ]
+            }
+          ],
+          "samples": [
+            "question one",
+            "question one {questionOne} yeah by myself",
+            "i {questionOne} checks and pay the bills",
+            "{questionOne} checks without help and i can pay my bills",
+            "{questionOne} sometimes with help",
+            "{questionOne} at times ",
+            "{questionOne} QuestionOne sometimes by myself  without help",
+            "{questionOne} QuestionOne by myself without help",
+            "I write checks  with someone pay bills  without help",
+            "I do write checks with help {questionOne} and I can pay bills without help",
+            "{questionOne} without help from ",
+            "Question One {questionOne}",
+            "I write checks and pay bills {questionOne}"
+          ]
+        },
+        {
+          "name": "QuestionTwoIntent",
+          "slots": [
+            {
+              "name": "questionTwo",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "question two {questionTwo}",
+                "{questionTwo}"
+              ]
+            }
+          ],
+          "samples": [
+            "question two",
+            "questiontwo {questionTwo} sometimes by myself",
+            "{questionTwo} questiontwo yes I can",
+            "{questionTwo}  question two I assemble tax records but with help from someone",
+            "Question two  I  assemble tax records  by myself   someone helps",
+            "yes   I  assemble tax records alone",
+            "Question two no  I  assemble tax records  with  someone",
+            " I  assemble tax records  with  someone",
+            "Question two  I  assemble tax records alone ",
+            "Question Two {questionTwo}",
+            "I assemble tax records {questionTwo}",
+            "no {questionTwo}",
+            "yes {questionTwo}"
+          ]
+        },
+        {
+          "name": "DataStoreIntent",
+          "slots": [],
+          "samples": []
+        },
+        {
+          "name": "QuestionThreeIntent",
+          "slots": [
+            {
+              "name": "questionThree",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "question three {questionThree}",
+                "{questionThree}"
+              ]
+            }
+          ],
+          "samples": [
+            "question three",
+            "question three {questionThree} yea without help",
+            "question three {questionThree} without help",
+            "question three {questionThree} by myself ",
+            "question three yes I shop for clothes groceries and household necessities ",
+            "I shop myself with help",
+            "Question three  I   shop for   things",
+            "Question three {questionThree}",
+            "I do my shopping {questionThree}",
+            "I shop {questionThree}",
+            "I shop for necessitites {questionThree}"
+          ]
+        },
+        {
+          "name": "QuestionFourIntent",
+          "slots": [
+            {
+              "name": "questionFour",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{questionFour}"
+              ]
+            }
+          ],
+          "samples": [
+            "question four",
+            "Question four {questionFour}",
+            "{questionFour} play games of skill or work on a hobby",
+            "I play games {questionFour}"
+          ]
+        },
+        {
+          "name": "QuestionFiveIntent",
+          "slots": [
+            {
+              "name": "questionFive",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{questionFive}"
+              ]
+            }
+          ],
+          "samples": [
+            "Question Five {questionFive}",
+            "{questionFive} prepare tea or coffee",
+            "I prepare tea or coffee {questionFive}"
+          ]
+        },
+        {
+          "name": "QuestionSixIntent",
+          "slots": [
+            {
+              "name": "questionSix",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{questionSix}"
+              ]
+            }
+          ],
+          "samples": [
+            "Question Six {questionSix}",
+            "I prepare a balanced meal {questionSix}",
+            "{questionSix} a balanced meal"
+          ]
+        },
+        {
+          "name": "QuestionSevenIntent",
+          "slots": [
+            {
+              "name": "questionSeven",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{questionSeven}"
+              ]
+            }
+          ],
+          "samples": [
+            "Question seven {questionSeven}",
+            "I keep track of current events {questionSeven}",
+            "{questionSeven} of current events"
+          ]
+        },
+        {
+          "name": "QuestionEightIntent",
+          "slots": [
+            {
+              "name": "questionEight",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{questionEight}"
+              ]
+            }
+          ],
+          "samples": [
+            "Question eight {questionEight}",
+            "I pay attention {questionEight}",
+            "I pay attention to t.v. {questionEight}",
+            "{questionEight} pay attention to t.v."
+          ]
+        },
+        {
+          "name": "QuestionNineIntent",
+          "slots": [
+            {
+              "name": "questionNine",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{questionNine}"
+              ]
+            }
+          ],
+          "samples": [
+            "i remember things like doctors appointments family occasions or taking medication",
+            "yes i remember doctor appointments family occasions and or taking medication",
+            "i remember when it was {questionNine}",
+            "yes  I  remember  remember things appointments family occasions and or taking medications",
+            "Question nine {questionNine}",
+            "I remember doctor appointments {questionNine}",
+            "I remember things like doctors appointments {questionNine}",
+            "{questionNine} remember things like doctors appointments family occasions or taking medication"
+          ]
+        },
+        {
+          "name": "QuestionTenIntent",
+          "slots": [
+            {
+              "name": "questionTen",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{questionTen}"
+              ]
+            }
+          ],
+          "samples": [
+            "yes I travel",
+            "question ten I travel sometimes",
+            "question ten no I do not travel ",
+            "question ten yes I travel without",
+            "question ten sometimes I travel ",
+            "no with help",
+            "I by myself",
+            "question ten I travel when someone picks me up",
+            "Question ten sometimes {questionTen}",
+            "Question ten {questionTen}",
+            "{questionTen} travel outside my neighborhood",
+            "I travel outside {questionTen}"
+          ]
+        },
+        {
+          "name": "SilentIntent",
+          "slots": [
+            {
+              "name": "Silent",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "quire {Silent}"
+          ]
+        },
+        {
+          "name": "scoringIntent",
+          "slots": [
+            {
+              "name": "scoring",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "My son does the cooking for me all the time"
+              }
+            }
+          ],
+          "name": "UserInput"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "QuestionOneIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "questionOne",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.598046069053.1640711687224"
+              }
+            }
+          ],
+          "delegationStrategy": "ALWAYS"
+        },
+        {
+          "name": "QuestionTwoIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "questionTwo",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.539756173749.176935800517"
+              }
+            }
+          ],
+          "delegationStrategy": "SKILL_RESPONSE"
+        },
+        {
+          "name": "QuestionThreeIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "questionThree",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.678460554104.1119973724160"
+              }
+            }
+          ]
+        },
+        {
+          "name": "QuestionFourIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "questionFour",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.596885761079.1393254086378"
+              }
+            }
+          ]
+        },
+        {
+          "name": "QuestionFiveIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "questionFive",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.22862166734.27535826746"
+              }
+            }
+          ]
+        },
+        {
+          "name": "QuestionSixIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "questionSix",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1399885814525.967827269717"
+              }
+            }
+          ]
+        },
+        {
+          "name": "QuestionSevenIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "questionSeven",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1395567642441.963670297746"
+              }
+            }
+          ]
+        },
+        {
+          "name": "QuestionEightIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "questionEight",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1442930213259.625783584104"
+              }
+            }
+          ]
+        },
+        {
+          "name": "QuestionNineIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "questionNine",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.242717042029.45279008438"
+              }
+            }
+          ]
+        },
+        {
+          "name": "QuestionTenIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "questionTen",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.261131155497.1569997103245"
+              }
+            }
+          ],
+          "delegationStrategy": "SKILL_RESPONSE"
+        },
+        {
+          "name": "SilentIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "Silent",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.598046069053.1640711687224",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Do you write checks or pay bills?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.539756173749.176935800517",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Do you assemble tax records or other important documents?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.678460554104.1119973724160",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Do you shop for clothes, groceries, or other household necessities?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.596885761079.1393254086378",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Do you play games of skill or work on a hobby?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.22862166734.27535826746",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Do you prepare tea or coffee?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1399885814525.967827269717",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Do you prepare a balanced meal?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1395567642441.963670297746",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Do you keep track of current events?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1442930213259.625783584104",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Do you pay attention to or have discussions about TV, books, or magazines?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.242717042029.45279008438",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Do you remember things like doctors appointments, family occasions, or taking medication?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.261131155497.1569997103245",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Do you travel outside of your neighborhood?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.878106200493.870207756537",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Welcome to question eleven"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "26"
+}
